@@ -3,6 +3,10 @@
     padding: 8px 0;
     .section-border();
 
+    @media @mobile {
+        padding-bottom: 15px;
+    }
+
     .examples-container {
         display: flex;
         justify-content: space-evenly;
@@ -14,5 +18,17 @@
         width: 30%;
         padding: 1.5%;
         border: 1px solid grey;
+
+        @media @mobile {
+            display: none;
+        }
+
+    }
+
+    @media @mobile {
+        .example.on-mobile {
+            width: 85%;
+            display: initial;
+        }
     }
 }
