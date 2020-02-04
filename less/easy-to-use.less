@@ -3,6 +3,10 @@
     justify-content: space-around;
     .section-border();
 
+    @media @mobile {
+        flex-direction: column;
+    }
+
     .text {
         width: 47%;
         padding: 2%;
@@ -12,10 +16,19 @@
         p {
             font-size: 1em;
         }
+
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     img {
         padding: 5%;
-        width: 47%
+        width: 47%;
+
+        @media @mobile {
+            width: 100%;
+        }
     }
 }
