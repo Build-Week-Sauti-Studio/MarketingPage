@@ -60,4 +60,28 @@ nav {
         text-decoration: none;
         font-weight: bold;
     }
+
+    @media @mobile {
+        .logo-and-menu-icon {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .menu-icon {
+        display: none;
+
+        @media @mobile {
+            display: initial;
+
+            .line {
+                width: 35px;
+                height: 5px;
+                background-color: white;
+                margin: 6px;
+            }
+        }
+    }
 }
