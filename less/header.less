@@ -10,6 +10,10 @@ header {
 
     background: @hl-section-bg;
 
+    @media @mobile {
+        flex-direction: column-reverse;
+    }
+
     .call-to-action {
         display: flex;
         flex-direction: column;
@@ -18,6 +22,10 @@ header {
         text-align: center;
         width: 55%;
         padding: 3%;
+
+        @media @mobile {
+            width: 100%;
+        }
     }
 
     p {
