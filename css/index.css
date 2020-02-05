@@ -1,0 +1,279 @@
+@import "normalize.css";
+.button {
+  color: white;
+  background-color: darkorange;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+p {
+  font-size: 1.2rem;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0;
+  }
+}
+body {
+  padding-bottom: 2vh;
+  font-size: 1.6rem;
+}
+nav {
+  background-color: #212121;
+  color: white;
+  padding: 0 2%;
+}
+nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  nav .container {
+    flex-direction: column;
+    font-size: 1.7rem;
+  }
+  nav .container.links {
+    flex-direction: column-reverse;
+    align-items: center;
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  nav .app-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  nav .app-links * {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  nav .marketing-site-links {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+nav .logo {
+  white-space: nowrap;
+  padding-right: 4%;
+}
+nav .logo .period {
+  color: #fe5043;
+}
+nav .logo .studio {
+  color: #fe5043;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  nav .logo-and-menu-icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+nav .menu-icon {
+  display: none;
+  border: none;
+  background-color: #212121;
+}
+@media (max-width: 500px) {
+  nav .menu-icon {
+    display: initial;
+  }
+  nav .menu-icon .line1,
+  nav .menu-icon .line2,
+  nav .menu-icon .line3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px;
+  }
+}
+@media (max-width: 500px) {
+  nav.open {
+    /* Show mobile links when navbar has the open class applied */
+    /* Make menu icon into an X when the navbar is open */
+  }
+  nav.open .links {
+    display: initial;
+  }
+  nav.open .line1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  nav.open .line2 {
+    opacity: 0;
+  }
+  nav.open .line3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+  border-top: none;
+  background: lightgrey;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column-reverse;
+  }
+}
+header .call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 55%;
+  padding: 3%;
+}
+@media (max-width: 500px) {
+  header .call-to-action {
+    width: 100%;
+  }
+}
+header p {
+  font-size: 1.6rem;
+}
+header img {
+  border-radius: 15px;
+  filter: drop-shadow(5px 7px 2px);
+}
+.easy-to-use {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid grey;
+}
+@media (max-width: 500px) {
+  .easy-to-use {
+    flex-direction: column;
+  }
+}
+.easy-to-use .text {
+  width: 47%;
+  padding: 2%;
+  line-height: 1.3;
+  font-size: 1.4rem;
+}
+.easy-to-use .text p {
+  font-size: 1em;
+}
+@media (max-width: 500px) {
+  .easy-to-use .text {
+    width: 100%;
+    text-align: center;
+  }
+}
+.easy-to-use img {
+  object-fit: contain;
+  display: block;
+  max-width: 47%;
+}
+@media (max-width: 500px) {
+  .easy-to-use img {
+    max-width: 100%;
+  }
+}
+.knowledge {
+  border-bottom: 1px solid grey;
+  padding: 0 10%;
+  padding-bottom: 15px;
+  font-size: 1.4rem;
+  background: lightgrey;
+}
+@media (max-width: 500px) {
+  .knowledge {
+    padding: 0;
+  }
+}
+.knowledge h2 {
+  margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .knowledge h2 {
+    padding: 0 4%;
+  }
+}
+.knowledge p {
+  font-size: 1em;
+}
+@media (max-width: 500px) {
+  .knowledge p {
+    padding: 0 4%;
+  }
+}
+.knowledge img {
+  padding: 5% 10% 0;
+}
+@media (max-width: 500px) {
+  .knowledge img {
+    padding: 0;
+  }
+}
+.examples {
+  text-align: center;
+  padding: 8px 0;
+  border-bottom: 1px solid grey;
+}
+@media (max-width: 500px) {
+  .examples {
+    padding-bottom: 15px;
+  }
+}
+.examples .examples-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin: 30px 0;
+}
+.examples .example {
+  width: 30%;
+  padding: 1.5%;
+  border: 1px solid grey;
+}
+@media (max-width: 500px) {
+  .examples .example {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .examples .example.on-mobile {
+    width: 85%;
+    display: initial;
+  }
+}
+footer {
+  text-align: center;
+  padding: 2%;
+}
+/*# sourceMappingURL=index.css.map */
