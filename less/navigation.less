@@ -1,0 +1,121 @@
+nav {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    padding: 0 2%;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media @mobile {
+            flex-direction: column;
+            font-size: 1.7rem;
+
+            &.links {
+                flex-direction: column-reverse;
+                align-items: center;
+                display: none;
+            }
+
+        }
+
+    }
+
+    .app-links {
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+
+            * {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+    }
+
+    .marketing-site-links {
+        @media @mobile {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+
+    .logo {
+        white-space: nowrap;
+        padding-right: 4%;
+
+        .period {
+            color: @header-accent;
+        }
+
+        .studio {
+            color: @header-accent;
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    @media @mobile {
+        .logo-and-menu-icon {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .menu-icon {
+        display: none;
+        border: none;
+        background-color: @header-bg;
+
+        @media @mobile {
+            display: initial;
+
+            .line1,
+            .line2,
+            .line3 {
+                width: 35px;
+                height: 5px;
+                background-color: white;
+                margin: 6px;
+            }
+
+        }
+    }
+
+    @media @mobile {
+        &.open {
+
+            /* Show mobile links when navbar has the open class applied */
+            .links {
+                display: initial;
+            }
+
+
+            /* Make menu icon into an X when the navbar is open */
+            .line1 {
+                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-9px, 6px);
+            }
+
+            .line2 {
+                opacity: 0;
+            }
+
+            .line3 {
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-8px, -8px);
+            }
+        }
+    }
+
+}
