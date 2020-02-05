@@ -1,4 +1,6 @@
 .team {
+    padding: 1%;
+
     .team-members {
         display: flex;
         flex-wrap: wrap;
@@ -11,10 +13,14 @@
             text-align: center;
             border: 1px solid grey;
 
+            @media @mobile {
+                max-width: 100%;
+            }
+
             a {
                 text-decoration: none;
                 color: @header-accent;
-                font-size: 2.0rem;
+                font-size: 2.5rem;
             }
 
             img {
