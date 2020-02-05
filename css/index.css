@@ -14,9 +14,6 @@ html {
   box-sizing: border-box;
   max-width: 100%;
 }
-p {
-  font-size: 1.2rem;
-}
 .container {
   max-width: 800px;
   width: 100%;
@@ -275,5 +272,36 @@ header img {
 footer {
   text-align: center;
   padding: 2%;
+}
+.about-intro {
+  padding: 2%;
+}
+.team {
+  padding: 2%;
+}
+.team .team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.team .team-members .team-member {
+  padding: 3%;
+  margin: 1%;
+  max-width: 48%;
+  text-align: center;
+  border: 1px solid grey;
+}
+@media (max-width: 500px) {
+  .team .team-members .team-member {
+    max-width: 100%;
+  }
+}
+.team .team-members .team-member a {
+  text-decoration: none;
+  color: #fe5043;
+  font-size: 2.5rem;
+}
+.team .team-members .team-member img {
+  border-radius: 5px;
 }
 /*# sourceMappingURL=index.css.map */
