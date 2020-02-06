@@ -87,6 +87,19 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+nav a:hover {
+  animation-name: colorFade;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes colorFade {
+  from {
+    color: white;
+  }
+  to {
+    color: #fe5043;
+  }
+}
 @media (max-width: 500px) {
   nav .logo-and-menu-icon {
     width: 100%;
