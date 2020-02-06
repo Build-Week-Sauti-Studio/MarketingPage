@@ -1,36 +1,47 @@
 .knowledge {
     .section-border();
-    padding: 0 10%;
-    padding-bottom: 15px;
+    padding: 5% 0;
     font-size: 1.4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 
     background: @hl-section-bg;
 
     @media @mobile {
         padding: 0;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 49%;
+        padding: 0 3%;
+
+        @media @mobile {
+            padding: 0 4%;
+            width: 100%;
+        }
     }
 
     h2 {
         margin-bottom: 15px;
+        color: @header-accent;
 
-        @media @mobile {
-            padding: 0 4%;
-        }
     }
 
     p {
         font-size: 1em;
-
-        @media @mobile {
-            padding: 0 4%;
-        }
+        color: @hl-section-font-col;
     }
 
     img {
-        padding: 5% 10% 0;
+        width: 49%;
+        padding: 0 1%;
+        object-fit: contain;
 
         @media @mobile {
             padding: 0;
+            width: 100%;
         }
     }
 }
