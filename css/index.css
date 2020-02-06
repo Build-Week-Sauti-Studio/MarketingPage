@@ -7,6 +7,9 @@
   text-decoration: none;
   font-weight: bold;
 }
+.button:hover {
+  box-shadow: 0px 0px 5px lightgrey;
+}
 html {
   font-size: 62.5%;
 }
@@ -36,9 +39,9 @@ nav {
 }
 nav .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 @media (max-width: 500px) {
   nav .container {
@@ -47,7 +50,6 @@ nav .container {
   }
   nav .container.links {
     flex-direction: column-reverse;
-    align-items: center;
     display: none;
   }
 }
@@ -83,6 +85,19 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+nav a:hover {
+  animation-name: colorFade;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes colorFade {
+  from {
+    color: white;
+  }
+  to {
+    color: #fe5043;
+  }
 }
 @media (max-width: 500px) {
   nav .logo-and-menu-icon {
@@ -147,9 +162,9 @@ header {
 }
 header .call-to-action {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   text-align: center;
   width: 55%;
   padding: 3%;
@@ -170,6 +185,7 @@ header img {
 .easy-to-use {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border-bottom: 1px solid grey;
 }
 @media (max-width: 500px) {
@@ -207,8 +223,9 @@ header img {
   padding: 5% 0;
   font-size: 1.4rem;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
   background: #212121;
 }
 @media (max-width: 500px) {
@@ -290,8 +307,9 @@ footer {
 }
 .team .team-members {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .team .team-members .team-member {
   padding: 3%;

@@ -1,4 +1,25 @@
-
 .section-border() {
     border-bottom: 1px solid grey;
+}
+
+.fadeToColor(@duration; @from-color; @to-color) {
+    @keyframes colorFade {
+        from {
+            color: @from-color;
+        }
+
+        to {
+            color: @to-color;
+        }
+    }
+
+    animation-name: colorFade;
+    animation-duration: @duration;
+    animation-fill-mode: forwards;
+}
+
+.flex(@justify; @align: center) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
 }

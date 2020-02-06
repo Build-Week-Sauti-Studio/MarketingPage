@@ -4,10 +4,8 @@ nav {
     padding: 0 2%;
 
     .container {
-        display: flex;
+        .flex(space-between);
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
 
         @media @mobile {
             flex-direction: column;
@@ -15,7 +13,6 @@ nav {
 
             &.links {
                 flex-direction: column-reverse;
-                align-items: center;
                 display: none;
             }
 
@@ -61,6 +58,10 @@ nav {
         color: white;
         text-decoration: none;
         font-weight: bold;
+
+        &:hover {
+            .fadeToColor(0.2s; white; @header-accent);
+        }
     }
 
     @media @mobile {
